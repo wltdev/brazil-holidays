@@ -2,11 +2,11 @@ import axios from 'axios';
 
 const API_URL = 'https://brasilapi.com.br/api/feriados/v1';
 const fetch = () => {
-  const api = axios.create({
+  const instance = axios.create({
     baseURL: API_URL,
   });
 
-  api.interceptors.request.use(
+  instance.interceptors.request.use(
     (config: any) => {
       return {
         ...config,
@@ -24,7 +24,7 @@ const fetch = () => {
     (error) => Promise.reject(error),
   );
 
-  return api;
+  return instance;
 };
 
 export const api = fetch();
