@@ -1,9 +1,9 @@
 // import fetch from 'node-fetch';
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 import ServiceError from '../errors/ServiceError';
 import { Holiday } from '../interfaces/holiday';
 
-export default function fetchBrasilAPIService(url: string): Promise<any> {
+export default async function fetchBrasilAPIService(url: string): Promise<any> {
   const options = {
     method: 'GET',
     mode: 'cors',

@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { API_URL } from './utils/api';
 import fetchBrasilAPIService from './services/brazilapi.service';
 import { Holiday } from './interfaces/holiday';
