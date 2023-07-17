@@ -1,6 +1,6 @@
 {
   "name": "brazil-holidays",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This Lib return all Brazil holidays",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

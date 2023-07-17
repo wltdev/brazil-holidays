@@ -25,10 +25,7 @@ function parseResponse(response) {
 }
 
 function extractHolidaysValuesFromResponse(response: Holiday[]) {
-  return {
-    ...response,
-    service: 'brasilapi',
-  };
+  return [...response];
 }
 
 function throwApplicationError(error) {
